@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sjayanna.googleimagesearch.activity.FilterActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:id="@+id/tvImgsz"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14sp"
+        android:layout_alignBottom="@+id/spImgsz"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spImgsz"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:entries="@array/size_array"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvImgsz"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="colorization"
+        android:id="@+id/tvImgc"
+        android:layout_below="@+id/tvImgsz"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/spImgc"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spImgc"
+        android:layout_alignParentRight="true"
+        android:entries="@array/imgc_array"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvImgc"
+        android:layout_below="@+id/spImgsz"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Type"
+        android:id="@+id/tvAsFileType"
+        android:layout_below="@+id/tvImgc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/spAsFileType"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spAsFileType"
+        android:layout_alignParentRight="true"
+        android:entries="@array/as_filetype_array"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvAsFileType"
+        android:layout_below="@+id/spImgc"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rights"
+        android:id="@+id/tvAsRights"
+        android:layout_below="@+id/tvAsFileType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/spAsRights"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spAsRights"
+        android:layout_alignParentRight="true"
+        android:entries="@array/as_rights_array"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvAsRights"
+        android:layout_below="@+id/spAsFileType"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:id="@+id/tvImgType"
+        android:layout_below="@+id/tvAsRights"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/spImgType"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spImgType"
+        android:layout_alignParentRight="true"
+        android:entries="@array/imgtype_array"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvImgType"
+        android:layout_below="@+id/spAsRights"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Domain"
+        android:id="@+id/tvAsSiteSearch"
+        android:layout_below="@+id/tvImgType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/etAsSiteSearch"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAsSiteSearch"
+        android:hint="example.com"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/spImgType"
+        android:layout_toRightOf="@+id/tvAsFileType"
+        android:layout_toEndOf="@+id/tvAsFileType" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:onClick="onSave"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/btnClear"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_toLeftOf="@+id/btnSave"
+        android:layout_marginRight="20dp"
+        android:onClick="onClear"
+         />
+
+</RelativeLayout>

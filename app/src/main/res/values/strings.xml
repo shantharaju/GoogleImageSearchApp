@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoogleImageSearch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Filter</string>
+    <string name="title_activity_image_display">Full Image</string>
+    <string name="title_activity_filter">FilterActivity</string>
+
+    <string-array name="size_array">
+        <item>any size</item>
+        <item>icon</item>
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>xlarge</item>
+        <item>xxlarge</item>
+        <item>huge</item>
+    </string-array>
+
+    <string-array name="imgc_array">
+        <item>any color</item>
+        <item>gray</item>
+    </string-array>
+
+    <string-array name="as_filetype_array">
+        <item>any type</item>
+        <item>jpg</item>
+        <item>png</item>
+        <item>gif</item>
+        <item>bmp</item>
+    </string-array>
+
+    <string-array name="as_rights_array">
+        <item>No restriction</item>
+        <item>cc_publicdomain</item>
+        <item>cc_sharealike</item>
+        <item>cc_noncommercial</item>
+        <item>cc_nonderived</item>
+    </string-array>
+
+    <string-array name="imgtype_array">
+        <item>Any type</item>
+        <item>face</item>
+        <item>photo</item>
+        <item>clipart</item>
+        <item>lineart</item>
+    </string-array>
+
+</resources>
