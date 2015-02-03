@@ -14,5 +14,10 @@ User can scroll down “infinitely” to continue loading more image results (up
 
 Bonus: Use the StaggeredGridView to display improve the grid of image results
 
+External libraries used:
+    * Android Android Asynchronous Http Client (http://loopj.com/android-async-http/)
+    * Picasso (http://square.github.io/picasso/)
+    * AndroidStaggeredGrid (https://github.com/f-barth/AndroidStaggeredGrid)
+
 Screencast of the app can be found here:
 https://www.screenr.com/0atN
